@@ -20,7 +20,7 @@ const ProductsList = ({products, productSelected, deleteProduct})=>{
                 )
             }
             {
-                (products == 0 && <span className="no__products">No hay productos creados</span>)
+                ((products.length === 0) && <span className="no__products">No hay productos creados</span>)
             }
             
         </div>
